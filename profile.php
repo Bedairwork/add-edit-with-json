@@ -61,20 +61,21 @@
       }
        function searchData($profiles){
             if(isset($_POST["search"]) && $_POST["search"]!=""){
-                if(strpos($profiles["firstName"],$_POST["search"])!==false){
+                $_POST["search"] = strtolower($_POST["search"]);
+                if(strpos(strtolower($profiles["firstName"]),$_POST["search"])!==false){
                     return true;
             }
-                if(strpos($profiles["lastName"],$_POST["search"])!==false){
+                if(strpos(strtolower($profiles["lastName"]),$_POST["search"])!==false){
                     return true;
             }
-            if(strpos($profiles["firstName"] ." " .$profiles["lastName"],$_POST["search"])!==false){
+            if(strpos(strtolower($profiles["firstName"] ." " .$profiles["lastName"]),$_POST["search"])!==false){
                 return true;
             }
             if($profiles["Age"]==$_POST["search"]){
                 return true;
             }
             foreach($profiles["skills"] as $skill){
-                if(strpos($skill,$_POST["search"])!==false){
+                if(strpos(strtolower($skill),$_POST["search"])!==false){
                 return true;
             }
             }
