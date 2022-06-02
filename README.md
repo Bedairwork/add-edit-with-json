@@ -6,3 +6,5 @@
 5) Added very simple captcha concept
 6) Adding URL paramters encryption 
 7) Adding bootstrap 
+8) Creating separate functions for readability and reusability
+9) Implemented best practices for time complexity
