@@ -305,7 +305,7 @@
             <div class="row">
                 <form method="POST">
             <table>
-                 <tr><td><b>Search the profiles Names: </b></td><td><input type="text" name="search" required></td><td><input type="submit" value="Search"></td></tr>
+                 <tr><td><b>Search the profiles full data: </b></td><td><input type="text" name="search" required></td><td><input type="submit" value="Search"></td></tr>
             </table>
             </form>
             <br>
